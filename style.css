@@ -44,3 +44,7 @@ button {
 .hidden {
   display: none;
 }
+
+span {
+  font-weight: bold;
+}

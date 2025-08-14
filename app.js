@@ -22,12 +22,16 @@ const hitungUmur = () => {
     return `Tahun Lahir Harus berupa angka.`;
   }
 
+  if (tahunLahirUser < 1900 || tahunLahirUser > tahunSekarang) {
+    return `Masukkan Tahun Lahir Yang Benar`;
+  }
+
   const umurUser = tahunSekarang - tahunLahirUser;
 
-  return `${namaInpt} kamu lahir pada tahun ${tahunLahirUser} dan sekarang kamu berumur ${umurUser} Tahun`;
+  return `<span>${namaInpt}</span> kamu lahir pada tahun <span>${tahunLahirUser}</span> dan sekarang kamu berumur <span>${umurUser} </span>Tahun`;
 };
 
 hitungBtn.onclick = () => {
-  tampilkanHasil.textContent = hitungUmur();
+  tampilkanHasil.innerHTML = hitungUmur();
   tampilkanHasil.classList.remove("hidden");
 };
