@@ -1,0 +1,5 @@
+---- latihan membuat app hitung usia ----
+1. mengambil nama user yg di input
+2. mengambil tahun lahir user yang di input
+3. menjumlahkan umur berdasarkan tahun lahir user
+4. ketika user menekan tombol 'Hitung' jumlahkan dan tampilkan hasilnya
